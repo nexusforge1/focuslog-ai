@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import React, { Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { useState } from 'react';
 import { Sparkles, Edit3, Target, CheckCircle2, HelpCircle, MessageSquare, ArrowRight, RotateCcw, Save, AlertCircle, Cpu, Layers, Code, Compass, Book, BookOpen } from 'lucide-react';
 import { LearningPath, AISynthesisResult } from '@/types/focuslog';
 import { aiService } from '@/services/ai/provider';
 import { storageService } from '@/services/storage/storage';
+import { useRouter } from 'next/navigation';
 
-export default function NewSessionPage() {
+function SessionContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialPath = (searchParams.get('path') as LearningPath) || 'System Design';
@@ -225,5 +227,13 @@ export default function NewSessionPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function NewSessionPage() {
+  return (
+    <Suspense fallback={<div className="p-6 text-sm text-stone-500">Loading session...</div>}>
+      <SessionContent />
+    </Suspense>
   );
 }
