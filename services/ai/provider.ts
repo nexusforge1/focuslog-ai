@@ -1,4 +1,4 @@
-import { AISynthesisResult, LearningPath } from '@/.next/types/focuslog';
+import { AISynthesisResult, LearningPath } from '@/types/focuslog';
 
 export interface AIProvider {
   synthesizeSession(path: LearningPath, rawThoughts: string): Promise<AISynthesisResult>;

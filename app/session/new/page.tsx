@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Sparkles, Edit3, Target, CheckCircle2, HelpCircle, MessageSquare, ArrowRight, RotateCcw, Save, AlertCircle, Cpu, Layers, Code, Compass, Book, BookOpen } from 'lucide-react';
-import { LearningPath, AISynthesisResult } from '@/.next/types/focuslog';
+import { LearningPath, AISynthesisResult } from '@/types/focuslog';
 import { aiService } from '@/services/ai/provider';
 import { storageService } from '@/services/storage/storage';
 

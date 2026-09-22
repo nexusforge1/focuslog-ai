@@ -1,4 +1,4 @@
-import { AISynthesisResult } from '@/.next/types/focuslog';
+import { AISynthesisResult } from '@/types/focuslog';
 
 export const AI_SYSTEM_PROMPT = `You are a thoughtful learning coach for FocusLog AI. 
 Your goal is not to summarize notes, but to help the user understand what they learned, recognize where their thinking is weak, articulate it clearly, and know what to do next.

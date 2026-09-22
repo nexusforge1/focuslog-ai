@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Sparkles, ArrowRight, Layers, Cpu, Code, Compass, Book, BookOpen, ChevronRight } from 'lucide-react';
-import { FocusSession, LearningPath } from '@/.next/types/focuslog';
+import { FocusSession, LearningPath } from '@/types/focuslog';
 import { storageService } from '@/services/storage/storage';
 
 export default function DashboardPage() {

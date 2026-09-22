@@ -1,6 +1,6 @@
 "use client";
 
-import { FocusSession } from '@/.next/types/focuslog';
+import { FocusSession } from '@/types/focuslog';
 
 const STORAGE_KEY = 'focuslog_sessions_v1';
 

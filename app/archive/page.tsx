@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Search, PlusCircle, ChevronRight, ArrowRight, FileText, Cpu, Layers, Code, Compass, Book, BookOpen } from 'lucide-react';
-import { FocusSession, LearningPath } from '@/.next/types/focuslog';
+import { FocusSession, LearningPath } from '@/types/focuslog';
 import { storageService } from '@/services/storage/storage';
 
 export default function ArchivePage() {
